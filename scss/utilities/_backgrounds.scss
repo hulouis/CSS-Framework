@@ -1,0 +1,23 @@
+
+// _backgrounds.scss
+.bg-primary {
+  background-color: $primary-color;
+  color: white;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+  color: white;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+}
+
+.border {
+  border: 1px solid #ddd;
+}
+
+.border-rounded {
+  border-radius: 5px;
+}
