@@ -1,0 +1,174 @@
+@use 'variables';
+$font-roboto: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+}
+
+
+//font gap
+$font-gap: 1.5rem;
+// font sizes
+$font-xs: 0.8rem;
+$font-sm: 0.9rem;
+$font-md: 1rem;
+$font-lg: 1.2rem;
+$font-xl: 1.5rem;
+$font-2x: 2rem;
+$font-3x: 3rem;
+$font-4x: 4rem;
+$font-5x: 5rem;
+
+// font weights
+$font-thin: 100;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-black: 900;
+
+//headings
+h1 {
+  font-size: $font-3x;
+  font-weight: $font-black;
+  margin-bottom: $font-gap ;
+}
+
+h2 {
+  font-size: $font-2x;
+  font-weight: $font-bold;
+  margin-bottom: $font-gap ;
+}
+
+h3 {
+  font-size: $font-3x;
+  font-weight: $font-black;
+  margin-bottom: $font-gap ;
+}
+
+h4 {
+  font-size: $font-lg;
+  font-weight: $font-medium;
+  margin-bottom: $font-gap ;
+}
+
+h5 {
+  font-size: $font-md;
+  font-weight: $font-medium;
+  margin-bottom: $font-gap ;
+}
+
+h6 {
+  font-size: $font-sm;
+  font-weight: $font-regular;
+  margin-bottom: $font-gap ;
+}
+
+p {
+  font-size: $font-md;
+  font-weight: $font-regular;
+  margin-bottom: $font-gap ;
+}
+
+strong {
+  font-weight: $font-bold;
+}
+
+em {
+  font-style: italic;
+  font-weight: $font-thin;
+}
+
+.button {
+  background-color: variables.$primary-color;
+  color: white;
+  padding: variables.$spacing-small variables.$spacing-medium;
+  border-radius: 4px;
+  border: none;
+
+
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid variables.$font-color;
+
+  th {
+    background-color: variables.$primary-color;
+
+    color: white;
+  }
+}
+
+.btn {
+  background-color: variables.$primary-color;
+  color: white;
+}
+
+.btn-2 {
+  background-color: variables.$secondary-color;
+  color: white;
+}
+
+// _components.scss
+
+$primary-color: #3498db;
+$error-color: #e74c3c;
+
+.form-group {
+  margin-bottom: 15px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  input,
+  textarea {
+    border: 1px solid lighten(variables.$primary-color, 20%);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: variables.$primary-color;
+      outline: none;
+    }
+  }
+
+  textarea {
+    height: 100px;
+    resize: vertical;
+  }
+
+  input.error {
+    border-color: $error-color;
+  }
+}
+
+button {
+  background-color: variables.$primary-color;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+
+  &:hover {
+    background-color: darken(variables.$primary-color, 10%);
+  }
+
+  &:active {
+    background-color: darken(variables.$primary-color, 15%);
+  }
+}

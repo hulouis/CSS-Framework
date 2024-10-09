@@ -1,0 +1,23 @@
+@use 'variables';
+@use 'components';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: variables.$primary-color;
+  font-weight: variables.$heading-font-weight;
+}
+
+p {
+  font-size: variables.$base-font-size;
+  color: variables.$font-color;
+}
+
+ul,
+ol {
+  margin: variables.$spacing-medium 0;
+  padding-left: variables.$spacing-large;
+}
