@@ -1,0 +1,81 @@
+// _variables.scss
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-family: 'Helvetica Neue', sans-serif;
+$font-size-base: 16px;
+$padding-base: 10px;
+$border-radius: 5px;
+
+// _reset.scss
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  // _typography.scss
+body {
+    font-family: $font-family;
+    font-size: $font-size-base;
+    line-height: 1.5;
+    color: $secondary-color;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: $padding-base;
+  }
+
+  // _buttons.scss
+.btn {
+    @include button-styles($primary-color);
+    &.btn-secondary {
+      @include button-styles($secondary-color);
+    }
+  }
+ // _forms.scss
+.form-group {
+    margin-bottom: $padding-base;
+  
+    .form-label {
+      display: block;
+      margin-bottom: 5px;
+      color: $primary-color;
+    }
+  
+    .form-input {
+      width: 100%;
+      padding: $padding-base;
+      border: 1px solid $secondary-color;
+      border-radius: $border-radius;
+    }
+  }
+  
+  // _tables.scss
+table {
+    width: 100%;
+    border-collapse: collapse;
+  
+    th, td {
+      padding: $padding-base;
+      text-align: left;
+      border-bottom: 1px solid $secondary-color;
+    }
+  }
+
+  // _forms.scss
+.form-group {
+    margin-bottom: $padding-base;
+  
+    .form-label {
+      display: block;
+      margin-bottom: 5px;
+      color: $primary-color;
+    }
+  
+    .form-input {
+      width: 100%;
+      padding: $padding-base;
+      border: 1px solid $secondary-color;
+      border-radius: $border-radius;
+    }
+  }
