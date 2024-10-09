@@ -1,0 +1,102 @@
+
+/* Compiled CSS for the framework with responsive nav */
+
+html, body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.nav {
+  display: flex;
+  background-color: #3498db;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav__menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav__item a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav__toggle {
+  display: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav__menu {
+    display: none;
+    flex-direction: column;
+    background-color: #3498db;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav__menu.active {
+    display: flex;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.alert--success {
+  background-color: #2ecc71;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.alert--danger {
+  background-color: #e74c3c;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #3498db;
+  color: white;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

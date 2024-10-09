@@ -1,0 +1,44 @@
+
+// _buttons.scss
+
+.btn {
+  padding: 0.8rem 2rem;
+  border-radius: 25px; /* Rounded corners */
+  font-size: $font-size-md;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  letter-spacing: 0.5px;
+
+  /* Primary button styles */
+  &--primary {
+    background-color: $primary-color;
+    color: white;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      transform: translateY(-2px); /* Slight lift on hover */
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Deepen the shadow */
+    }
+  }
+
+  /* Secondary button styles */
+  &--secondary {
+    background-color: $secondary-color;
+    color: white;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  /* Button focus state */
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba($primary-color, 0.4); /* Focus outline */
+  }
+}

@@ -1,0 +1,61 @@
+
+// _nav.scss
+.nav {
+  display: flex;
+  background-color: $primary-color;
+  padding: $spacing-unit;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav__logo {
+    color: white;
+    font-size: $font-size-lg;
+    font-weight: bold;
+  }
+
+  .nav__menu {
+    display: flex;
+    list-style: none;
+    gap: $spacing-unit * 2;
+
+    .nav__item a {
+      color: white;
+      text-decoration: none;
+      font-size: $font-size-md;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // Hamburger menu (hidden by default)
+  .nav__toggle {
+    display: none;
+    font-size: $font-size-lg;
+    color: white;
+    cursor: pointer;
+  }
+
+  // Hide the menu on smaller screens
+  @media (max-width: 768px) {
+    .nav__menu {
+      display: none;
+      flex-direction: column;
+      background-color: $primary-color;
+      position: absolute;
+      top: 60px; /* Adjust according to the height of the nav */
+      left: 0;
+      width: 100%;
+      padding: $spacing-unit;
+    }
+
+    .nav__menu.active {
+      display: flex;
+    }
+
+    // Show the hamburger icon on smaller screens
+    .nav__toggle {
+      display: block;
+    }
+  }
+}

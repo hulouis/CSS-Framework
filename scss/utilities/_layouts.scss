@@ -1,0 +1,20 @@
+
+// _layouts.scss
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  gap: $spacing-unit;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}

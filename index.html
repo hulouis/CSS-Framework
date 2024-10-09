@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/styles.css">
+  <title>CSS Framework Demo</title>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__logo">Framework</div>
+    
+    <!-- Hamburger Icon -->
+    <div class="nav__toggle" onclick="toggleMenu()">☰</div>
+    
+    <ul class="nav__menu" id="menu">
+      <li class="nav__item"><a href="#">Home</a></li>
+      <li class="nav__item"><a href="#">About</a></li>
+      <li class="nav__item"><a href="#">Contact</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h1 class="text-center">Welcome to Our Expanded CSS Framework</h1>
+
+    <div class="card">
+      <div class="card__header">Card Header</div>
+      <div class="card__body">This is a card body.</div>
+      <div class="card__footer"><button class="btn btn--primary">Learn More</button></div>
+    </div>
+
+    <div class="alert alert--success">This is a success alert!</div>
+    <div class="alert alert--danger">This is a danger alert!</div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+        </tr>
+        <tr>
+          <td>Data 3</td>
+          <td>Data 4</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
